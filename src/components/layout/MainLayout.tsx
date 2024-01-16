@@ -1,33 +1,11 @@
-import { Layout, Menu, MenuProps } from "antd";
+import { Layout, Menu} from "antd";
 import { Outlet } from "react-router-dom";
+import { AdminSidebarItem } from "../../routes/adminrouters";
 
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const items: MenuProps['items'] = [
-    {
-        key: '1',
-        label: 'Deshboard'
-    },
-    {
-        key: '2',
-        label: 'Profile'
-    },
-    {
-        key: '3',
-        label: 'Adminastative',
-        children:[
-            {
-                key: '12',
-                label: 'Deshboard'
-            },
-            {
-                key: '22',
-                label: 'Profile'
-            },
-        ]
-    },
-]
+// const items: MenuProps['items'] = AdminSidebarItem
 const MainLayout = () => {
   return (
     <Layout style={{height: "100vh"}}>
@@ -54,7 +32,7 @@ const MainLayout = () => {
           theme="dark"
           mode="inline"
           defaultSelectedKeys={["4"]}
-          items={items}
+          items={AdminSidebarItem}
         />
       </Sider>
       <Layout>
