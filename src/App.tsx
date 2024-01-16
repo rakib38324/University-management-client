@@ -1,12 +1,9 @@
+import MainLayout from "./components/layout/MainLayout"
 
 
 function App() {
  
-  return (
-    <>
-      <p>PH Univerity app</p>
-    </>
-  )
+  return <MainLayout />
 }
 
 export default App
