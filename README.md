@@ -1,3 +1,3 @@
-# Welcome to University Management repository
+# Welcome to the University Management repository
 
 
