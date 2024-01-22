@@ -8,34 +8,33 @@ import { facultyPath } from "./facultyroutes";
 import { studentPath } from "./studentroutes";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App />,
-    },
-    {
-        path: '/admin',
-        element: <App />,
-        children: routeGenerators(adminPath)
-    },
-    {
-        path: '/faculty',
-        element: <App />,
-        children: routeGenerators(facultyPath)
-    },
-    {
-        path: '/student',
-        element: <App />,
-        children: routeGenerators(studentPath)
-    },
-    {
-        path: '/login',
-        element: <Login />
-    },
-    {
-        path: '/register',
-        element: <Register />
-    },
-    
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/admin",
+    element: <App />,
+    children: routeGenerators(adminPath),
+  },
+  {
+    path: "/faculty",
+    element: <App />,
+    children: routeGenerators(facultyPath),
+  },
+  {
+    path: "/student",
+    element: <App />,
+    children: routeGenerators(studentPath),
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
 ]);
 
 export default router;
